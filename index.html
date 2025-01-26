@@ -14,14 +14,14 @@
     <div style=" background-color: rgb(255 255 255 / 30%);
     backdrop-filter: blur(10px);" class="body2 ">
     <header style=" box-shadow: rgba(66, 65, 65, 0.19) 0px 10px 20px, rgba(68, 67, 67, 0.23) 0px 6px 6px;"
-        class="bg-[#272626] px-3 mx-16 rounded-b-xl flex items-center justify-between h-[70px] w-[1221px]">
+        class="bg-[#272626] px-3  rounded-b-xl flex items-center justify-between h-[70px]  container mx-auto">
         <div class="container mx-auto ">
             <nav class="flex items-center justify-between">
                 <div class="flex gap-3">
                     <button><i class="bi bi-list text-[30px] text-white"></i></button>
                     <h1 class="text-white text-[30px] font-extrabold ">WATCHER</h1>
                 </div>
-                <ul class="flex gap-5">
+                <ul id="ul" class="flex gap-5 ">
                     <li class="text-white text-[18px] font-semibold">Current Sesions</li>
                     <li class="text-white text-[18px] font-semibold">IMAX</li>
                     <li class="text-white text-[18px] font-semibold">3D</li>
@@ -38,13 +38,13 @@
         </div>
     </header>
     
-    <div class="container w-full mx-auto h-[500px]   flex py-8 pt-[100px] px-9">
-        <div class=" w-[30%] flex   ">
-            <div class=" w-full h-[100%]">
+    <div class="container w-full mx-auto h-[500px]   flex py-8 pt-[100px] px-9" id="topCard">
+        <div class=" w-[30%] flex" id="video-contentImg">
+            <div class=" w-full h-[100%]" >
                 <img  class="h-full w-full"  id="video-content" src="" alt="">
             </div>
         </div>
-        <div style="backdrop-filter: blur(100px); background-color: rgba(0, 0, 0, 0.4);"  class="   w-[62%]  flex items-center h-full ">
+        <div style="backdrop-filter: blur(100px); background-color: rgba(0, 0, 0, 0.4);"  class="   w-[62%]  flex items-center h-full m:flex flex-col  " id="info">
             <div class=" flex flex-col  w-full  px-5">
                 <div class="h-[300px]  ">
                     <h2 id="title-video" class="text-center text-[35px] font-semibold">Lorem ipsum dolor sit amet.</h2>
